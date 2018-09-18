@@ -1,0 +1,61 @@
+body{
+	text-align: center;
+	font-family: verdana,arial,helvetica, sans-serif;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	margin: 0;
+
+	background: #e2ece5;
+}
+.encabezado{
+background-color: #b6b8ca;
+ color:#ccc;
+ position: center;
+  margin: 1px auto;
+margin-top: 0px;
+
+}
+
+#bebidas{
+	width: 260px;
+}
+
+.contenedor-li{
+	background:  #aae8b8;
+	margin: auto;
+	font-size: 80%;
+  width: 50%;
+ border-left: 3px;
+ border-style: solid;
+ border-color:black; 
+margin-top: 10px;
+}
+
+#letra{
+	color: #802d23;
+}
+
+#form{
+width: 100;
+height: 700;
+}
+
+p{
+	color: #d06314 ;
+}
+
+#letra-1{
+	color: #d06314 ;
+}
+legend{
+	color: #A93226;
+	font-weight: bold;
+}
+#recargo{
+	color: #A93226;
+	font-weight: bold;
+}
+label{
+
+	font-weight: bold;
+}

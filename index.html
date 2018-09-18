@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LICORERIA  </title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+</head>
+<body> 
+
+	<script  type="text/javascript" src="js/form.js"> </script>
+
+<div class="contenedor-li">
+<div class= "encabezado">
+	<h1  id=letra align="center"> LICORERIA LA MUERTE</h1>
+</div>
+	<form id="form" name="form" method="post" action="licor.php">	
+		<table class="datos" align="center"> 
+		
+		<td align="left"> <font face="Arial, Helvetica,sans-serif" size="+1"></font>
+			<h4 >Informe de nuestros productos:</h4>
+			<select id="bebidas" name=" bebidas"  onclick="enviar()">
+				<option value="1"> Whisky</option>
+				<option value="2"> Vino </option>
+				<option value="3"> Champagne </option>
+				<option value="4"> Ron </option>
+			</select>
+			
+			<br>
+				<label id="letra-1">*Los precios no incluyen IGV</label>
+			<br>
+			<br>
+
+		<fieldset>
+			<legend> Situacion</legend>
+			<br>
+			<input type="radio"  onclick="enviar()" id="s1" name="situacion" value="1" /> Nuevo
+			<input type="radio" onclick="enviar()" id="s2" name="situacion" value="2" /> Antiguo
+		</fieldset>
+	<br>
+
+		<form>
+			<input type="checkbox" onclick="enviar()" id="re1" value="1">
+			<label id=recargo >*Recargo </label>
+			 <label id="letra-1" align="left">(Unicamente a provincia)</label>
+		</form>
+	<br>
+	<br>
+		<fieldset>
+			<legend> Forma de pago</legend>
+			<br>
+			<input type="radio" id="f1" onclick="enviar()" name="situacion1" value="Contado" /> Contado
+		<input type="radio" onclick="enviar()" id="f2" name="situacion1" value="Partes" /> Partes
+		</fieldset>
+</td>
+
+	
+<td>
+		<img src="img/licorfrutas.jpg" border="3" width="260" height="280">
+</td>
+</table>
+
+<br>
+<br>
+
+<table class="precio" align="center" style="width:auto;font-size:80%;"	 cellspacing="0" cellpadding="0"> 
+
+<tr> 
+	<td>
+    <label>Costo Basico:</label>
+    <td><input type="text" id="Cost" oninput="enviar()" name="CostoB"  ></td>
+
+     <td><label>Importe: </label></td>
+    <td><input type="input" id="Import"  name="importe" ></td>
+ </tr>
+
+ <tr>
+    <td><label>Descuento:</label></td>
+    <td><input type="input" id="Descu"  name="descuento" oninput="enviar()" ></td>
+
+    <td><label>IGV (18%):</label></td>
+    <td><input type="input" id="Igv1" name="IGV" ></td>
+</tr>
+
+<tr>
+    <td><label>*Recargo:</label></td>
+    <td><input type="input" id="Recarg"  name="recargo" ></td>
+
+    <td><label>Total a pagar:</label></td>
+    <td><input type="input" id="Total"  name="total" ></td>
+</tr>
+
+</table>
+
+<br>
+<br>
+<br>
+
+</tr>
+</tr>
+
+</form>
+
+</center>
+
+</body>
+</html>
